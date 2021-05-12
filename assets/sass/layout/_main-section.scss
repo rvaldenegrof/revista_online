@@ -1,4 +1,4 @@
-.contenido {
+.hero {
     width: 100%;
     padding: 0 2rem;
     text-align: center;
@@ -9,7 +9,7 @@
         margin: 0 auto;
     }
 
-    &__noticia {
+    &__new {
         display: inline-block;
         margin: 0.313rem;
         cursor: pointer;
@@ -31,12 +31,12 @@
         }
     }
 
-    &__listado-izquierdo {
+    &__list-izq {
         display: none;
     }
 }
 @media only screen and (min-width: 992px){
-    .contenido {
+    .hero {
         text-align: left;
         &__cuerpo {
             img {
@@ -49,14 +49,14 @@
             }
         }
     
-        &__listado-izquierdo {
+        &__list-izq {
             display: initial;
             width: 100%;
             float: right;
             padding-left: 2rem;
         }
     
-        &__cabecera-listado {
+        &__title-listado {
             border-bottom: 1px solid gray;
         }
     
@@ -76,7 +76,7 @@
             }
         }
     
-        &__noticias-destacadas {
+        &__news-news {
             margin-bottom: 3.125rem;
     
             img {
