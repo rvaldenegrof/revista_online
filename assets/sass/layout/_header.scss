@@ -1,0 +1,47 @@
+.nav {
+    width: 100%;
+    padding: 0.25rem;
+    border-bottom: 1px solid gray;
+
+    &__titulo {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        display: inline-block;
+        text-align: right;
+        list-style-type: none;
+        line-height: 3rem;
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__search {
+        border-radius: 1.875rem;
+        padding-left: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .nav {
+        padding: 0.625rem;
+
+        &__link {
+            &--hidden {
+                display: initial;
+            }
+        }
+    }
+}
