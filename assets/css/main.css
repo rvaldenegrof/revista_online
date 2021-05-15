@@ -1,5 +1,3 @@
-/* ABSTRACT */
-/* VENDORS */
 /* BASE */
 html, body {
   margin: 0;
@@ -284,11 +282,14 @@ body {
   width: 100%;
   padding: 0 2rem;
   text-align: center;
+  display: grid;
 }
 .hero__listad-noticias {
   width: 100%;
   float: left;
   margin: 0 auto;
+  display: grid;
+  grid-column-gap: 10px;
 }
 .hero__new {
   display: inline-block;
@@ -309,6 +310,10 @@ body {
 }
 .hero__list-izq {
   display: none;
+}
+
+.sep {
+  grid-column-gap: 2em;
 }
 
 @media only screen and (min-width: 992px) {
@@ -378,9 +383,5 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
-/* COMPONENTS */
-/* PAGES */
-/* THEMES */
 
 /*# sourceMappingURL=main.css.map */
